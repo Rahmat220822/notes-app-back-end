@@ -1,0 +1,26 @@
+Jika sudah menginstall eslint maka Anda akan konfigurasi terlebih dalulu
+
+perintahnya : npx eslint --init
+
+Kemudian Anda akan diberikan beberapa pertanyaan, silakan jawab pertanyaan 
+yang ada dengan jawaban berikut:
+
+1. How would you like to use ESLint? => To check,find problems, and enforce code style.
+2. What type of modules does your project use? => Commonks(require/exports).
+3. Which framework did you use? => None of these.
+4. Does your project use TypeScript? => No.
+5. Where does your code run? => Node (pilih menggunakan spasi).
+6. How would you like to define a style for your project? => Use a popular style guide.
+7. Which style guide do you want to follow? => (Anda bebas memilih, sebagai contoh pilih AirBnB).
+8. What format do you want your config file to be in? => JSON.
+9. Would you like to ......(seluruh pertanyaan selanjutnya) => Y.
+
+setelah menjawab seluruh pertanyaan yang diberikan, maka akan terbentuk berkas konfigurasi
+eslint dengan nama .eslintrc.json.
+
+// Hal ini chrome mengganggap origin request tidak aman. Agar berhasil, kita whitelist origin sebagai domain yang aman
+caranya, di chrome buka <chrome://flags/#unsafely-treat-insecure-origin-as-secure
+Lalu localhost,localhost:port, dan domain kita whitelist sebagai origin yang aman pada opsi berikut:
+
+cari tulisan yang insecure origins treated as secure dan klik enabled isi localhost, localhost:port, dan domain kita ke
+dalam table
